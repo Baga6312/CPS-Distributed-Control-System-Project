@@ -69,7 +69,9 @@ A simplified DCS for temperature regulation might include:
 
 python
 
-`# Simplified code structure   class ControlNode:       def __init__(self, target_temp):        self.temp = initial_value        self.neighbors = []       def update(self, neighbor_data):        error = target_temp - self.temp        neighbor_influence = average(neighbor_data)        adjustment = 0.1 * error + 0.2 * neighbor_influence        self.temp += adjustment`  
+```
+# Simplified code structure   class ControlNode:       def __init__(self, target_temp):        self.temp = initial_value        self.neighbors = []       def update(self, neighbor_data):        error = target_temp - self.temp        neighbor_influence = average(neighbor_data)        adjustment = 0.1 * error + 0.2 * neighbor_influence        self.temp += adjustment
+```
 
 **Simulation Steps**:
 
